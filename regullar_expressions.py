@@ -4,15 +4,13 @@ import os
 import pdb
 
 
-
-
 def run_re():
     pattern = 'pDq'
 
     temp_dir = '/tmp/'
-    pdb.set_trace()
     filename = os.path.join(temp_dir, 'large_re_file.txt')
     infile = open(filename, 'r')
+
     match_count = 0
     lines = 0
 
@@ -25,8 +23,7 @@ def run_re():
     return lines, match_count
 
 
-
-if __name__ == "main":
+if __name__ == "__main__":
     pdb.set_trace()
     lines, match_count = run_re()
     pdb.set_trace()
