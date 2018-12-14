@@ -13,7 +13,7 @@ def run_re():
     match_count = 0
     lines = 0
 
-    pdb.set_trace()
+
     for line in infile:
         match = re.search(pattern, line)
         if match:
@@ -23,8 +23,8 @@ def run_re():
 
 
 if __name__ == "__main__":
-    pdb.set_trace()
+    # pdb.set_trace()
     lines, match_count = run_re()
-    pdb.set_trace()
+    # pdb.set_trace()
     print('LINES::, {}'.format(lines))
     print('MATCHES::, {}'.format(match_count))
