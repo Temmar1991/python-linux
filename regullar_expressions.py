@@ -7,22 +7,16 @@ def run_re():
 
     temp_dir = '/tmp/'
     filename = os.path.join(temp_dir, 'large_re_file.txt')
-    infile=open(filename,'r')
-
-    temp_dir = '/tmp/'
-    filename = os.path.join(temp_dir, 'large_re_file.txt')
-    infile=open(filename,'r')
-
-    infile=open('large_re_file.txt','r')
-
+    infile = open(filename, 'r')
     match_count = 0
     lines = 0
+
     for line in infile:
         match = re.search(pattern, line)
         if match:
             match_count += 1
-            line += 1
-    return (lines, match_count)
+        lines += 1
+    return lines, match_count
 
 
 
