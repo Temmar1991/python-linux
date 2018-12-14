@@ -8,4 +8,15 @@ class DoubleRepr(object):
 dr = DoubleRepr()
 print(dr)
 
+import os
 
+temp_dir = '/tmp/'
+filename = os.path.join(temp_dir, 'large_re_file.txt')
+try:
+    infile = open(filename, 'r')
+except:
+    print('filename {} not found'.format(filename))
+
+
+
+print(filename)
