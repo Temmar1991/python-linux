@@ -25,7 +25,7 @@ def run_re():
     return lines, match_count
 
 
-pdb.set_trace()
+
 if __name__ == "main":
     pdb.set_trace()
     lines, match_count = run_re()
