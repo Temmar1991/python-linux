@@ -26,5 +26,5 @@ if __name__ == "__main__":
     # pdb.set_trace()
     lines, match_count = run_re()
     # pdb.set_trace()
-    print('LINES::, {}'.format(lines))
-    print('MATCHES::, {}'.format(match_count))
+    print('LINES:: {}'.format(lines))
+    print('MATCHES:: {}'.format(match_count))
